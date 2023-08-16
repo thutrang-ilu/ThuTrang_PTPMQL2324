@@ -28,8 +28,8 @@ Console.WriteLine("{0} + {1} = {2}", a, b, a+b); */
 		Console.WriteLine("Sinh vien {0} - {1} tuoi",hoTen,tuoi);
 	}
 }*/
-/* Hằng số */
-/*internal class vidu1
+/* Hằng số 
+internal class vidu1
 {
 	private static void Main(string[] args)
 	{
@@ -40,4 +40,13 @@ Console.WriteLine("{0} + {1} = {2}", a, b, a+b); */
 		const long tuoi = 32;
 		Console.WriteLine("Nhan vien {0} - {1} nam kinh nghiem - {2} tuoi",hoTen,namLamViec,tuoi);
 	}
-}*/
+} */
+internal class vidu1
+{
+	private static void Main(string[] args)
+	{
+		int a = 10;
+		float b = a;
+		System.Console.WriteLine("b = " + b);
+	}
+}
