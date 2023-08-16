@@ -1,4 +1,4 @@
-﻿public class Program
+﻿/*public class Program
 {
 	private static void Main(string[] args)
 	{
@@ -19,5 +19,23 @@
 		d = Convert.ToInt32(Console.ReadLine());
 		System.Console.WriteLine("Chia lay nguyen {0}/{1}={2}", c,d,c/d);
 		System.Console.WriteLine("Chia lay du {0}%{1}={2}", c,d,c%d);
+	}
+}*/
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		int a,b;
+		System.Console.Write("Nhap a = ");
+		a = Convert.ToInt32(Console.ReadLine());
+		System.Console.Write("Nhap b = ");
+		b = Convert.ToInt32(Console.ReadLine());
+		if(a<b)
+		{
+			System.Console.WriteLine("So sanh: {0}<{1}", a,b);
+		}
+		else
+			System.Console.WriteLine("So sanh: {0}>{1}", a,b)
+
 	}
 }
