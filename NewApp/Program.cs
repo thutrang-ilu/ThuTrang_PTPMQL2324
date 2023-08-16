@@ -41,6 +41,7 @@ internal class vidu1
 		Console.WriteLine("Nhan vien {0} - {1} nam kinh nghiem - {2} tuoi",hoTen,namLamViec,tuoi);
 	}
 } */
+/* Chuyển đổi dữ liệu
 internal class vidu1
 {
 	private static void Main(string[] args)
@@ -48,5 +49,27 @@ internal class vidu1
 		int a = 10;
 		float b = a;
 		System.Console.WriteLine("b = " + b);
+	}
+}*/
+/* chuyển đổi bằng Parse
+internal class vidu1
+{
+	private static void Main(string[] args)
+	{
+		string str = "123";
+		int a = int.Parse(str);
+		System.Console.WriteLine("a = " + a);
+	}
+}   */
+/* chuyển đổi bằng TryParse*/
+internal class vidu1
+{
+	private static void Main(string[] args)
+	{
+		string str = "123";
+		int ketQua;
+		bool kiemTra = false;
+		kiemTra = int.TryParse(str,out(ketQua));
+		System.Console.WriteLine("Ket qua = " + ketQua);
 	}
 }
