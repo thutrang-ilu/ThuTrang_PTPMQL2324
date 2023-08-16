@@ -25,17 +25,17 @@ public class Program
 {
 	private static void Main(string[] args)
 	{
-		int a,b;
-		System.Console.Write("Nhap a = ");
-		a = Convert.ToInt32(Console.ReadLine());
-		System.Console.Write("Nhap b = ");
-		b = Convert.ToInt32(Console.ReadLine());
-		if(a<b)
-		{
-			System.Console.WriteLine("So sanh: {0}<{1}", a,b);
+		float a =2;
+		if(a >=8){
+			System.Console.WriteLine("Hoc luc gioi");
+		}else if (a >= 6.5){
+			System.Console.WriteLine("Hoc luc kha");
+		}else if (a >= 5){
+			System.Console.WriteLine("Hoc luc trung binh");
+		}else if (a >= 3.5){
+			System.Console.WriteLine("Hoc luc yeu");
+		}else {
+			System.Console.WriteLine("Hoc luc kem");
 		}
-		else
-			System.Console.WriteLine("So sanh: {0}>{1}", a,b)
-
 	}
 }
