@@ -61,7 +61,7 @@ internal class vidu1
 		System.Console.WriteLine("a = " + a);
 	}
 }   */
-/* chuyển đổi bằng TryParse*/
+/* chuyển đổi bằng TryParse
 internal class vidu1
 {
 	private static void Main(string[] args)
@@ -72,4 +72,15 @@ internal class vidu1
 		kiemTra = int.TryParse(str,out(ketQua));
 		System.Console.WriteLine("Ket qua = " + ketQua);
 	}
+}    */
+internal class vidu1
+{
+	private static void Main(string[] args)
+	{
+		string str = "123";
+		//chuyển đổi kiểu dữ liệu string sang int
+		int a = Convert.ToInt32(str);
+		System.Console.WriteLine("a = " + a);
+	}
 }
+
