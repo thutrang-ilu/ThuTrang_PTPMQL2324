@@ -2,57 +2,43 @@
 {
 	private static void Main(string[] args)
 	{
-		int a,b;
-		//thong bao nguoi dung nhap vao a
-		System.Console.Write("a = ");
-		a = Convert.ToInt32(Console.ReadLine());
-		System.Console.Write("b = ");
-		b = Convert.ToInt32(Console.ReadLine());
-		//in tong a+b
-		System.Console.WriteLine("Tong 2 so:{0}+{1}={2}", a,b,a+b);
-		System.Console.WriteLine("Hieu 2 so {0}-{1}={2}", a,b,a-b);
-		System.Console.WriteLine("Tich 2 so {0}*{1}={2}", a,b,a*b);
-		int c,d;
-		System.Console.Write("c = ");
-		c = Convert.ToInt32(Console.ReadLine());
-		System.Console.Write("d = ");
-		d = Convert.ToInt32(Console.ReadLine());
-		System.Console.WriteLine("Chia lay nguyen {0}/{1}={2}", c,d,c/d);
-		System.Console.WriteLine("Chia lay du {0}%{1}={2}", c,d,c%d);
-	}
-}*/
-/*public class Program
-{
-	private static void Main(string[] args)
-	{
-		float a =2;
-		if(a >=8){
-			System.Console.WriteLine("Hoc luc gioi");
-		}else if (a >= 6.5){
-			System.Console.WriteLine("Hoc luc kha");
-		}else if (a >= 5){
-			System.Console.WriteLine("Hoc luc trung binh");
-		}else if (a >= 3.5){
-			System.Console.WriteLine("Hoc luc yeu");
-		}else {
-			System.Console.WriteLine("Hoc luc kem");
+		int day = 10;
+		switch(day)
+		{
+			case 1: System.Console.WriteLine("Chu nhat"); break;
+			case 2: System.Console.WriteLine("Thu 2"); break;
+			case 3: System.Console.WriteLine("Thu 3"); break;
+			case 4: System.Console.WriteLine("Thu 4"); break;
+			case 5: System.Console.WriteLine("Thu 5"); break;
+			case 6: System.Console.WriteLine("Thu 6"); break;
+			case 7: System.Console.WriteLine("Thu 7"); break;
+			default :
+				System.Console.WriteLine("Không phai ngay trong tuan");
+				break;
 		}
 	}
-}*/
+}    */
+/* Vòng for
 public class Program
 {
 	private static void Main(string[] args)
 	{
-		int a = 10;
-		if(a<0)
+		for(int i =0; i<10; i++)
 		{
-			System.Console.WriteLine("{0} là so nguyên âm", a);
-		} else{
-			if(a % 2 ==0) {
-				System.Console.WriteLine("{0} là so nguyen duong chan", a);
-			} else {
-				System.Console.WriteLine("{0} là so nguyen duong le", a);
-			}
+			System.Console.WriteLine("Vong lap thu {0}",i);
+		}
+	}
+}    */
+
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		int a = 1;
+		while(a < 5)
+		{
+			System.Console.WriteLine("Vong lap thu {0}",a);
+			a++;
 		}
 	}
 }
