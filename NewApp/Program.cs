@@ -21,7 +21,7 @@
 		System.Console.WriteLine("Chia lay du {0}%{1}={2}", c,d,c%d);
 	}
 }*/
-public class Program
+/*public class Program
 {
 	private static void Main(string[] args)
 	{
@@ -36,6 +36,23 @@ public class Program
 			System.Console.WriteLine("Hoc luc yeu");
 		}else {
 			System.Console.WriteLine("Hoc luc kem");
+		}
+	}
+}*/
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		int a = 10;
+		if(a<0)
+		{
+			System.Console.WriteLine("{0} là so nguyên âm", a);
+		} else{
+			if(a % 2 ==0) {
+				System.Console.WriteLine("{0} là so nguyen duong chan", a);
+			} else {
+				System.Console.WriteLine("{0} là so nguyen duong le", a);
+			}
 		}
 	}
 }
