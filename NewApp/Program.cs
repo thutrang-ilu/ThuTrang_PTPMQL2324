@@ -42,7 +42,7 @@ public class Program
 		}
 	}
 }       */
-/* Vòng do...while
+// Vòng do...while
 public class Program
 {
 	private static void Main(string[] args)
@@ -56,7 +56,7 @@ public class Program
 		while(a < 5);
 		
 	}
-}    */
+}    
 /*
 public class Program
 {
@@ -69,6 +69,7 @@ public class Program
 		}
 	}
 }  */
+/* Lệnh Continue
 public class Program
 {
 	private static void Main(string[] args)
@@ -79,4 +80,4 @@ public class Program
 			System.Console.WriteLine("Vong lap thu {0}", i);
 		}
 	}
-}
+}    */
