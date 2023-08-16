@@ -29,7 +29,7 @@ public class Program
 		}
 	}
 }    */
-
+/* Vòng While
 public class Program
 {
 	private static void Main(string[] args)
@@ -39,6 +39,44 @@ public class Program
 		{
 			System.Console.WriteLine("Vong lap thu {0}",a);
 			a++;
+		}
+	}
+}       */
+/* Vòng do...while
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		int a = 1;
+		do
+		{
+			System.Console.WriteLine("Vong lap thu {0}",a);
+			a++;
+		}
+		while(a < 5);
+		
+	}
+}    */
+/*
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		for(int i = 0; i < 10; i++)
+		{
+			if(i==5) break;
+			System.Console.WriteLine("Vong lap thu {0}", i);
+		}
+	}
+}  */
+public class Program
+{
+	private static void Main(string[] args)
+	{
+		for(int i = 0; i < 10; i++)
+		{
+			if(i==5) continue;
+			System.Console.WriteLine("Vong lap thu {0}", i);
 		}
 	}
 }
