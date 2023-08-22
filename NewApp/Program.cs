@@ -7,9 +7,15 @@ public class Program
 		Student std = new Student();
 		std.EnterData();
 		std.Display();
-		*/
+	
 		Employee emp = new Employee();
 		emp.EnterData();
 		emp.Display();
+		*/
+		Vegetable veg = new Vegetable();
+		veg.EnterData();
+		veg.Display();
+		
+
 	}
 }
