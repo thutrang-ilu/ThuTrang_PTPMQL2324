@@ -5,7 +5,6 @@ public class Program
 	{
 		Student std = new Student();
 		std.EnterData();
-		std.StudentCode = "123456789";
 		std.Display();
 	}
 }
