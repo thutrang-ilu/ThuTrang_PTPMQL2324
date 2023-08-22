@@ -19,7 +19,7 @@ public class Program
 		Person ps = new Person();
 		string str = "Nguyen Van A";
 		int a = 22;
-		// goi phuong thuc va truyen tham so
-		ps.Display2(str, a);
+		Console.WriteLine("{0} sinh nam {1}", str, ps.GetYearOfBirth(a));
+
 	}
 }
