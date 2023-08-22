@@ -3,8 +3,13 @@ public class Program
 {
 	private static void Main(string[] args)
 	{
+		/* 
 		Student std = new Student();
 		std.EnterData();
 		std.Display();
+		*/
+		Employee emp = new Employee();
+		emp.EnterData();
+		emp.Display();
 	}
 }
