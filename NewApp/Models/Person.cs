@@ -16,7 +16,12 @@ namespace NewApp.Models
        }
        public void Display()
        {
-        System.Console.WriteLine("Ten: {0} - Dia chỉ: {1} - {2} tuoi",FullName, Address, Age);
+        System.Console.WriteLine("Ten: {0} - Dia chi: {1} - {2} tuoi",FullName, Address, Age);
        }
+       public void Display2(string ten, int tuoi)
+       {
+        System.Console.WriteLine("Sinh vien {0} - {1} tuoi", ten, tuoi);
+       }
+
     }
 }

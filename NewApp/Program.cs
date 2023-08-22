@@ -3,6 +3,7 @@ public class Program
 {
 	private static void Main(string[] args)
 	{
+		/*
 		//Khoi tao 2 doi tuong tu class Person
 		Person ps1 = new Person();
 		Person ps2 = new Person();
@@ -12,5 +13,13 @@ public class Program
 		ps1.Age = 18;
 		// Goi phuong thuc hien thi thong tin
 		ps1.Display();
+		ps2.Display();
+		*/
+		// Khoi tao doi tuong ps tu class Person
+		Person ps = new Person();
+		string str = "Nguyen Van A";
+		int a = 22;
+		// goi phuong thuc va truyen tham so
+		ps.Display2(str, a);
 	}
 }
