@@ -12,7 +12,12 @@ namespace NewApp.Models
         System.Console.Write("Ten  = ");
         FruitName = Console.ReadLine();
         System.Console.Write("Han su dung = ");
-        Han = Convert.ToInt16(Console.ReadLine());
+         try {
+            Han = Convert.ToInt16(Console.ReadLine());
+        } catch(Exception e)
+        {
+            Han = 0;
+        }
        }
         public void Display()
        {

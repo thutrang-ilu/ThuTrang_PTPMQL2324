@@ -10,12 +10,18 @@ public class Program
 	
 		Employee emp = new Employee();
 		emp.EnterData();
-		emp.Display();
-		*/
+		emp.Display();*/
+	
 		Vegetable veg = new Vegetable();
 		veg.EnterData();
 		veg.Display();
-		
 
+		/*Person ps = new Person();
+		ps.EnterData();
+		ps.Display();
+
+		Fruit fr= new Fruit();
+		fr.EnterData();
+		fr.Display(); */
 	}
 }
