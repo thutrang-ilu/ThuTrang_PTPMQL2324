@@ -2,7 +2,7 @@ namespace NewApp.Models
 {
     public class Student : Person
     {
-        Student [] stdArray = new Student[7];
+        Student [] stdArray = new Student[5];
         public string StudentCode { get; set; }
         public void EnterData()
     {
