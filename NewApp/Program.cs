@@ -22,9 +22,10 @@ public class Program
 		personArr[i] = ps;
 		//Hiển thị mảng
 	}
-	foreach(Person p in personArr)
+	for(int i = 0; i < personArr.Length; i++)
 		{
-			p.Display();
+			Person ps = (Person)personArr[i];
+			ps.Display();
 		}
 	}
 }
