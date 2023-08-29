@@ -17,7 +17,7 @@ namespace NewApp.Models
         //Ke thua class Person
         base.Display();
         //Nhap thong tin Student code
-        System.Console.Write("Ma sinh vien: {0}", StudentCode);
+        System.Console.WriteLine("Ma sinh vien: {0}", StudentCode);
     }
     }
 }
