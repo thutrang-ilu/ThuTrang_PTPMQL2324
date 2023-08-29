@@ -1,27 +1,30 @@
-﻿using NewApp.Models;
+﻿using System.IO.Pipes;
+using NewApp.Models;
 public class Program
 {
 	private static void Main(string[] args)
 	{
-		/* 
-		Student std = new Student();
-		std.EnterData();
-		std.Display();
-	
-		Employee emp = new Employee();
-		emp.EnterData();
-		emp.Display();*/
-	
-		Vegetable veg = new Vegetable();
-		veg.EnterData();
-		veg.Display();
-
-		/*Person ps = new Person();
+	//Khai báo mảng với n phần tử
+	int n = 0;
+	do{
+		System.Console.WriteLine("Nhap kich thuoc mang: ");
+		n = Convert.ToInt32(Console.ReadLine());
+	}while(n<1);
+	Person [] personArr = new Person[n];
+	for(int i = 0; i < personArr.Length; i++)
+	{
+		Console.WriteLine("Nhap vao phan tu thu " + (i+1));
+		//Khai báo đối tượng từ class Person
+		Person ps = new Person();
+		//Nhập thông tin cho đối tượng 
 		ps.EnterData();
-		ps.Display();
-
-		Fruit fr= new Fruit();
-		fr.EnterData();
-		fr.Display(); */
+		//Gán đối tượng vào phần tử
+		personArr[i] = ps;
+		//Hiển thị mảng
+	}
+	foreach(Person p in personArr)
+		{
+			p.Display();
+		}
 	}
 }
