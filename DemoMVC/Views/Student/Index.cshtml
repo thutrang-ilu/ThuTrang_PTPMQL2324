@@ -1,11 +1,13 @@
 @model IEnumerable<DemoMVC.Models.Student>
 <p>
-    <a class="btn btn-success" asp-action="Create">Create a new Student</a>
+    <a class="btn btn-success" asp-action="Create">Thêm sinh viên</a>
 </p>
 <table class="table table-all">
     <tr>
         <th>Student ID</th>
         <th>Student Name</th>
+        <th>Address</th>
+        <th>Faculty</th>
         <th></th>
     </tr>
     @foreach (var item in Model)
@@ -13,9 +15,11 @@
         <tr>
             <td>@Html.DisplayFor(m => item.StudentID)</td>
             <td>@Html.DisplayFor(m => item.StudentName)</td>
+            <td>@Html.DisplayFor(m => item.Address)</td>
+            <td>@Html.DisplayFor(m => item.FacultyID)</td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.StudentID">Sửa</a>|
-                <a asp-action="Edit" asp-route-id="@item.StudentID">Xóa</a>
+                <a asp-action="Delete" asp-route-id="@item.StudentID">Xóa</a>
 
             </td>
         </tr>

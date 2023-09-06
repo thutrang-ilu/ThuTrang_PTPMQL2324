@@ -1,69 +1,107 @@
+using System.Security.Cryptography.X509Certificates;
+using DemoMVC.Data;
+using DemoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace DemoMVC;
-public class PersonController : Controller
+namespace DemoMVC.Controllers
 {
-    public IActionResult Index()
+    public class PersonController : Controller
     {
-        return View();
-    }
-    [HttpPost]
-    public IActionResult Index(string FullName)
-    {
-        string ps = "Hello " + FullName;
-        ViewBag.thongbao = ps;
-        return View();
-    }
-    public IActionResult Giaiptb2()
-    {
-        return View();
-    }
-    
-    [HttpPost]
-    public IActionResult Giaiptb2(string hesoA, string hesoB, string hesoC)
-    {
-        double delta, x1, x2, a=0, b=0, c=0;
-        string ketqua;
-        if(!String.IsNullOrEmpty(hesoA)) a = Convert.ToDouble(hesoA);
-        if(!String.IsNullOrEmpty(hesoB)) b = Convert.ToDouble(hesoB);
-        if(!String.IsNullOrEmpty(hesoC)) c = Convert.ToDouble(hesoC);
-        if(a==0) ketqua = "Khong phai phuong trinh bac 2";
-        else{
-            //tinh delta
-            delta = Math.Pow(b,2) - 4*a*c;
-            // Giai phuong trinh
-            if(delta<0) ketqua ="Phuong trinh vo nghiem";
-            else if(delta==0)
-            {
-                x1 = -b/(2*a);
-                ketqua ="Phuong trinh co nghiem kep = "+ x1;
-            }
-            else 
-            {
-                x1= (-b + Math.Sqrt(delta))/(2*a);
-                x2= (-b - Math.Sqrt(delta))/(2*a);
-                ketqua = "Phuong trinh co 2 nghiem phan biet: x1= "+ x1 + ", x2= "+x2;
-            }
+        private readonly ApplicationDbContext _context;
+        public PersonController (ApplicationDbContext context)
+        {
+            _context = context;
         }
-        ViewBag.gpt = ketqua;
-        return View();
+        public async Task<IActionResult> Index()
+        {
+            var model = await _context.Persons.ToListAsync();
+            return View(model);
+        }
+        public async Task<IActionResult> Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(Person ps)
+        {
+            if(ModelState.IsValid)
+            {
+                _context.Add(ps);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(ps);
+        }
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return View("NotFound");
+            }
+            var Person = await _context.Persons.FindAsync(id);
+            if (Person ==null)
+            {
+                return View("NotFound");
+            }
+            return View(Person);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit (string id, [Bind("PersonID, PersonName")] Person ps)
+        {
+            if (id != ps.PersonID)
+            {
+                return View("NotFound");
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(ps);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!PersonExists(ps.PersonID))
+                    {
+                        return View("NotFound");
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(ps);
+        }
+        public async Task<IActionResult>Delete(string id)
+        {
+            if (id == null)
+            {
+                return View("NotFound");
+            }
+            var ps = await _context.Persons.FirstOrDefaultAsync (m=> m.PersonID == id);
+            if (ps == null)
+            {
+                return View("NotFound");
+            }
+            return View(ps);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var ps = await _context.Persons.FindAsync(id);
+            _context.Persons.Remove(ps);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index)); 
+        }
+        private bool PersonExists(string id)
+        {
+             return _context.Persons.Any(e => e.PersonID == id);
+        }
+        
     }
-    public IActionResult Tinhluong()
-    {
-        return View();
-    }
-    [HttpPost]
-    public IActionResult Tinhluong(string Luongcb, string heSo, string Phucap)
-    {
-        double cb =0, hs =0, pc =0, luong = 0;
-        string trave;
-        if(!String.IsNullOrEmpty(Luongcb)) cb = Convert.ToDouble(Luongcb);
-        if(!String.IsNullOrEmpty(heSo)) hs = Convert.ToDouble(heSo);
-        if(!String.IsNullOrEmpty(Phucap)) pc = Convert.ToDouble(Phucap);
-        luong = cb*hs+pc;
-        trave = "Lương của bạn hiện tại là: " + luong;
-        ViewBag.tl = trave;
-        return View();
-    }
-
 }

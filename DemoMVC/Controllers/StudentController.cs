@@ -2,6 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 using DemoMVC.Data;
 using DemoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace DemoMVC.Controllers
@@ -16,14 +17,15 @@ namespace DemoMVC.Controllers
         public async Task<IActionResult> Index()
         {
             var model = await _context.Students.ToListAsync();
-            return View();
+            return View(model);
         }
         public async Task<IActionResult> Create()
         {
+            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyName");
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Student std)
+        public async Task<IActionResult> Create([Bind("StudentID, StudentName, Address, FacultyID")]Student std)
         {
             if(ModelState.IsValid)
             {
@@ -31,6 +33,7 @@ namespace DemoMVC.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyName", std.FacultyID);
             return View(std);
         }
         public async Task<IActionResult> Edit(string id)
@@ -48,7 +51,7 @@ namespace DemoMVC.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit (string id, [Bind("StudentId, StudentName")] Student std)
+        public async Task<IActionResult> Edit (string id, [Bind("StudentID, StudentName, Address")] Student std)
         {
             if (id != std.StudentID)
             {
