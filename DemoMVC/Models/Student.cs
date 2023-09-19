@@ -12,7 +12,8 @@ namespace DemoMVC.Models
         public string FacultyID { get; set; }
         [ForeignKey("FacultyID")]
         public Faculty? Faculty { get; set; }
-
-
+        public string SubjectID { get; set; }
+        [ForeignKey("SubjectID")]
+        public Subject? Subject { get; set; }
     }
 }

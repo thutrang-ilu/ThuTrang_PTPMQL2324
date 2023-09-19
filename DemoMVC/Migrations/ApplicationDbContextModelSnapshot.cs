@@ -57,7 +57,13 @@ namespace DemoMVC.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("SubjectID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("FacultyID");
+
+                    b.HasIndex("SubjectID");
 
                     b.ToTable("Faculty");
                 });
@@ -100,6 +106,40 @@ namespace DemoMVC.Migrations
                     b.ToTable("Students");
                 });
 
+            modelBuilder.Entity("DemoMVC.Models.Subject", b =>
+                {
+                    b.Property<string>("SubjectID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Student")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("StudentID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SubjectName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("SubjectID");
+
+                    b.HasIndex("StudentID");
+
+                    b.ToTable("Subject");
+                });
+
+            modelBuilder.Entity("DemoMVC.Models.Faculty", b =>
+                {
+                    b.HasOne("DemoMVC.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Subject");
+                });
+
             modelBuilder.Entity("DemoMVC.Models.Student", b =>
                 {
                     b.HasOne("DemoMVC.Models.Faculty", "Faculty")
@@ -109,6 +149,15 @@ namespace DemoMVC.Migrations
                         .IsRequired();
 
                     b.Navigation("Faculty");
+                });
+
+            modelBuilder.Entity("DemoMVC.Models.Subject", b =>
+                {
+                    b.HasOne("DemoMVC.Models.Student", "std")
+                        .WithMany()
+                        .HasForeignKey("StudentID");
+
+                    b.Navigation("std");
                 });
 #pragma warning restore 612, 618
         }

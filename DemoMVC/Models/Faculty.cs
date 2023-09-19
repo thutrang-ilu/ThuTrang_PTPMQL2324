@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DemoMVC.Models
 {
@@ -7,5 +8,6 @@ namespace DemoMVC.Models
         [Key]
         public string FacultyID { get; set; }
         public string FacultyName { get; set; }
+        
     }
 }

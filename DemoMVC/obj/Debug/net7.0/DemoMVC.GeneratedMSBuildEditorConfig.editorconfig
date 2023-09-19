@@ -9,141 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DemoMVC
 build_property.RootNamespace = DemoMVC
-build_property.ProjectDir = c:\Users\Asus\Desktop\PTPMQL2324\DemoMVC\
+build_property.ProjectDir = C:\Users\Asus\Desktop\PTPMQL2324\DemoMVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Asus\Desktop\PTPMQL2324\DemoMVC
+build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\PTPMQL2324\DemoMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Create.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Delete.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Details.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Edit.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Create.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Demo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Delete.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Details.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Edit.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Create.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Delete.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Details.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Edit.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Faculty/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Giaiptb2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaWFpcHRiMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Privacy.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Create.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Home/Tinhluong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaW5obHVvbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Delete.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Edit.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Giaiptb2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEdpYWlwdGIyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Person/Tinhluong.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFRpbmhsdW9uZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/Error.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/NotFound.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Create.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Delete.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Edit.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Index.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/_ViewImports.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Subject/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Subject/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Subject/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Subject/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Subject/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/_ViewStart.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Asus/Desktop/PTPMQL2324/DemoMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hzgfhw30l6
