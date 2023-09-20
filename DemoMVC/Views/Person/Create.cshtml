@@ -7,18 +7,18 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="PersonID" class="control-label"></label>
-                <input asp-for="PersonID" class="form-control">
+                <input asp-for="PersonID" class="form-control" placeholder="Nhap PersonID">
                 <span asp-validation-for="PersonID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PersonName" class="control-label"></label>
-                <input asp-for="PersonName" class="form-control">
+                <input asp-for="PersonName" class="form-control" placeholder="Nhap PersonName">
                 <span asp-validation-for="PersonName" class="text-danger"></span>
             </div>
             <br>
             <div class="form-group">
                 <input class="btn btn-primary" type="submit" value="Save">
-                <a class="btn btn-success" asp-action="Index">Danh sách person</a>
+                <a class="btn btn-success" asp-action="Index">Danh sách Person</a>
             </div>
         </form>
     </div>

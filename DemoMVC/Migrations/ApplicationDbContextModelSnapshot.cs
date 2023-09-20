@@ -57,13 +57,7 @@ namespace DemoMVC.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SubjectID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("FacultyID");
-
-                    b.HasIndex("SubjectID");
 
                     b.ToTable("Faculty");
                 });
@@ -99,9 +93,15 @@ namespace DemoMVC.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("SubjectID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("StudentID");
 
                     b.HasIndex("FacultyID");
+
+                    b.HasIndex("SubjectID");
 
                     b.ToTable("Students");
                 });
@@ -111,11 +111,8 @@ namespace DemoMVC.Migrations
                     b.Property<string>("SubjectID")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Student")
+                    b.Property<string>("FacultyID")
                         .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("StudentID")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("SubjectName")
@@ -124,20 +121,9 @@ namespace DemoMVC.Migrations
 
                     b.HasKey("SubjectID");
 
-                    b.HasIndex("StudentID");
+                    b.HasIndex("FacultyID");
 
                     b.ToTable("Subject");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Faculty", b =>
-                {
-                    b.HasOne("DemoMVC.Models.Subject", "Subject")
-                        .WithMany()
-                        .HasForeignKey("SubjectID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Subject");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Student", b =>
@@ -148,16 +134,26 @@ namespace DemoMVC.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DemoMVC.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Faculty");
+
+                    b.Navigation("Subject");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Subject", b =>
                 {
-                    b.HasOne("DemoMVC.Models.Student", "std")
+                    b.HasOne("DemoMVC.Models.Faculty", "Faculty")
                         .WithMany()
-                        .HasForeignKey("StudentID");
+                        .HasForeignKey("FacultyID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("std");
+                    b.Navigation("Faculty");
                 });
 #pragma warning restore 612, 618
         }
