@@ -5,10 +5,10 @@
 namespace MvcMovie.Migrations
 {
     /// <inheritdoc />
-    public partial class Create_table_Person : Migration
+    public partial class Create_Table_Person : Migration
     {
         /// <inheritdoc />
-        protected override void Up(MigrationBuilder migrationBuilder) //quản lý cấu trúc dữ kiểu theo các phiên bản 
+        protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "Persons",
@@ -16,7 +16,10 @@ namespace MvcMovie.Migrations
                 {
                     PersonId = table.Column<string>(type: "TEXT", nullable: false),
                     FullName = table.Column<string>(type: "TEXT", nullable: false),
-                    Address = table.Column<string>(type: "TEXT", nullable: false)
+                    Address = table.Column<string>(type: "TEXT", nullable: false),
+                    Discriminator = table.Column<string>(type: "TEXT", nullable: false),
+                    EmployeeId = table.Column<string>(type: "TEXT", nullable: true),
+                    Age = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
